@@ -25,7 +25,7 @@ class temperature_converter(_Jac.Walker):
 
     def return_message(self, _jac_here_: _Jac.RootType) -> None:
         celsius = (self.fahrenheit - 32) * 5.0 / 9.0
-        _Jac.report({'response': 'The temperature ' + str(self.fahrenheit) + 'F is ' + str(celsius) + 'C.'})
+        _Jac.report({'response': 'The temperature ' + str(self.fahrenheit) + 'Â°F is ' + str(celsius) + 'Â°C.'})
 
 @_Jac.make_walker(on_entry=[_Jac.DSFunc('return_message', _Jac.RootType)], on_exit=[])
 @__jac_dataclass__(eq=False)
