@@ -1,0 +1,22 @@
+Part 1:
+I had some issues with the setup and ended up doing anything in a virtual environment to resolve
+the issues with the packages and tools 
+
+Part 2:
+Again, ran into some issues with downloading everything and using the LLMs on my computer.
+I tried a few that made my computer lag and overheat severely, but I was able to get some
+timely responses from different LLMs eventually. Everything else went smoothly
+
+Part 3:
+1. The "motivation" state is a new mode in the chatbot that provides motivational affirmations.
+It's triggered when the user asks the chatbot for motivational or encouraging words, and the chatbot
+will respond with a positive phrase to motivate the user. For example, the user could send a message
+similar to "I need some motivation" or "Tell me something inspirational", and the chatbot will classify the
+phrase as "motivation" and respond with the requested phrase.
+
+2. When the user sends a message, the Router node classifies the message based on the text- in this
+case either RAG, QA, or Motivation. If the message is classified as Motivation, the user's query gets routed
+to the MotivationChat node, where the chatbot will respond with an appropriate message.
+
+This part of the project was most interesting! I enjoyed experimenting with different LLMs and comparing
+the responses based on the documents I trained them with.
